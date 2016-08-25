@@ -1,0 +1,827 @@
+/**************************************************
+说明：
+1：我们建议你通过只改变css的方式来制作新的皮肤模板。当然，页面的部分代
+码你也是可以更改的，例如一些图片的地址。但是，请你在递交作品的时候，请同时
+提交对页面部分代码的修改备注和说明。以便我们了解。
+2：为了保证页面的兼容性，请你分别在IE和Firefox中分别查看你的页面，以便保证页面
+对浏览器的兼容性。
+3：请你随时关注官方网站。以便获得最新的通知和说明
+时间：2008-1-30
+作者：杨正祎
+**************************************************/
+
+/**************************************************
+说明2：
+上面那个说明，是在 http://skintemplate.cnblogs.com 下载的皮肤模板中附带的
+在八年后的今天，这份“模板”，其实真正保留的，也只有注释了。
+博客园肯定经过了许许多多的变迁，好多元素的类名，ID都或多或少的有所变化。
+我也没有准备兼容低级浏览器，用了一些奇怪的选择器。没办法，谁让没有JS权限呢。
+博客园官方貌似一直没有更新这个主题模板，我也没有找到投递新主题的入口。
+嗯，就放在这里吧，算是我对MaterialDesign的一个执念。
+时间：2016-8-26 00：12
+作者：Rocket1184@博客园
+**************************************************/
+
+/**************************************************
+坑：
+由于博客园任性的代码高亮CSS，全部是 !important 优先级而且无法覆盖，
+此次的修改没有对代码块的字体大小做调整，但这恰恰是我最急于改变的地方之一。
+我会尽快申请JS权限，以便找到更好的解决方案。
+时间：2016-8-26 00：16
+作者：Rocket1184@博客园
+**************************************************/
+
+/**************************************************
+第一部分：所有的模板都使用的公共样式。公告样式是为了更好的向前和向后兼容。
+如果不符合你皮肤的要求，你可以在后面通过更高的优先级覆盖着这些样式，但是
+你不能删除这些样式。
+**************************************************/
+
+#EntryTag {
+	margin-top: 20px;
+	font-size: 9pt;
+	color: gray;
+}
+
+.topicListFooter {
+	text-align: right;
+	margin-right: 10px;
+	margin-top: 10px;
+}
+
+#divRefreshComments {
+	text-align: right;
+	margin-right: 10px;
+	margin-bottom: 5px;
+	font-size: 9pt;
+}
+
+
+/*****第一部分结束*******************************/
+
+
+/**************************************************
+第二部：公共样式（全局样式）。公共会对所有页面的标签都起作用。这个部分你
+可以随意的更改，并不会牵扯到其他的皮肤模板。但是每次更改都要注意你的皮肤
+模板所有页面的变化。因为它们是全局的。
+**************************************************/
+
+* {
+	margin: 0;
+	padding: 0;
+}
+
+html {
+	height: 100%;
+}
+
+body {
+	color: #000000;
+	background: #CFD8DD;
+	font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+	font-size: 16px;
+}
+
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+fieldset,
+img {
+	border: 0;
+}
+
+ul {
+	word-break: break-all;
+}
+
+li {
+	list-style: none !important;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+	font-size: 100%;
+	font-weight: normal;
+}
+
+a {
+	outline: none;
+}
+
+a:link {
+	color: black;
+	text-decoration: none;
+}
+
+a:visited {
+	color: black;
+	text-decoration: none;
+}
+
+a:hover {
+	color: #F60;
+	text-decoration: none;
+}
+
+a:active {
+	color: black;
+	text-decoration: none;
+}
+
+.clear {
+	clear: both;
+}
+
+
+/*****第二部分结束*******************************/
+
+
+/**************************************************
+第三部分：各个页面元素的样式。你可以根据需要随意的更改，并不会牵扯到其他
+的皮肤模板。这个部分是最能展现你想象力的部分。其中头部和侧边栏部分是此皮
+肤公共的部分。而每个页面特有的部分会有相应的注释和说明。
+**************************************************/
+
+
+/*****home和头部开始**************************/
+
+#header {
+	margin-bottom: 1.2rem;
+}
+
+#blogTitle {
+	height: 240px;
+	margin-top: 3em;
+	background-color: teal;
+}
+
+#blogTitle h1,
+#blogTitle h2 {
+	width: 1200px;
+	display: block;
+	margin: 0 auto;
+}
+
+#blogTitle h1 {
+	margin-top: 4em;
+}
+
+a.headermaintitle,
+#blogTitle h2 {
+	text-decoration: none;
+	font-size: 2.4rem;
+	color: white;
+	font-weight: 900;
+	text-shadow: 0 4px 4px rgba(0, 0, 0, 0.2);
+}
+
+#blogTitle h2 {
+	font-weight: 500;
+	font-size: 1.2rem;
+}
+
+#navigator {
+	background-color: #009688;
+	position: fixed;
+	width: 100%;
+	height: 3em;
+	top: 0;
+	right: 0;
+	overflow: hidden;
+	box-shadow: 0 0 8px rgba(0, 0, 0, 0.5);
+	opacity: 0.8;
+	z-index: 10086;
+}
+
+#navList {
+	display: block;
+	width: 1200px;
+	margin: auto;
+}
+
+#navList li {
+	display: inline-block;
+	padding: 0.8em 0;
+	transition: background-color 0.4s;
+}
+
+#navList li:hover {
+	background-color: rgba(255, 255, 255, 0.2);
+}
+
+#navList li a {
+	text-decoration: none;
+	color: white;
+	padding: 1em;
+}
+
+
+/*****home和头部结束**************************/
+
+
+/*****主页文章列表开始**************************/
+
+#main {
+	width: 1200px;
+	margin: auto;
+	font-size: 0;
+}
+
+#mainContent,
+#sideBar {
+	font-size: 1rem;
+	width: 920px;
+	display: inline-block;
+}
+
+.day {
+	width: 900px;
+	margin-bottom: 2rem;
+	background-color: white;
+	box-shadow: 0 3px 5px rgba(0, 0, 0, 0.15);
+	padding: 0.6rem 1rem;
+	box-sizing: border-box;
+	border-radius: 2px;
+}
+
+.dayTitle {
+	color: #009688;
+	float: right;
+}
+
+.postTitle::before,
+.entrylistPosttitle::before {
+	content: "|";
+	color: #009688;
+	font-size: 1.3rem;
+	font-weight: 900;
+	display: inline-block;
+}
+
+.postTitle a,
+.entrylistPosttitle a {
+	text-decoration: none;
+	font-size: 1.3rem;
+	color: #009688;
+	transition: margin-left 0.4s;
+}
+
+.postTitle a:hover {
+	margin-left: 1.2rem;
+}
+
+.postCon,
+.entrylistPostSummary {
+	margin: 1em;
+}
+
+.postTitle:not(:nth-child(2)) {
+	padding-top: 0.6rem;
+}
+
+.postDesc:not(:nth-last-child(2))::after {
+	user-select: none;
+	color: white;
+	font-size: 8px;
+	display: block;
+	width: 900px;
+	content: "-";
+	position: relative;
+	right: 1rem;
+	box-shadow: 0 3px 5px rgba(0, 0, 0, 0.15);
+	border-radius: 2px;
+	z-index: 2;
+}
+
+.postSeparator {
+	width: 920px;
+	position: relative;
+	right: 1.5rem;
+	height: 2rem;
+	display: block;
+	background-color: #CFD8DD;
+}
+
+.topicListFooter {
+	width: 900px;
+}
+
+.topicListFooter a {
+	padding: 0.6rem 1rem;
+	color: white;
+	background-color: #009688;
+	box-shadow: 0 3px 5px rgba(0, 0, 0, 0.15);
+}
+
+
+/*****主页文章列表结束**************************/
+
+
+/*****侧边栏开始********************************/
+
+#sideBar {
+	width: 280px;
+	vertical-align: top;
+}
+
+.newsItem,
+#blog-calendar,
+#leftcontentcontainer> div>div {
+	margin-bottom: 2rem;
+	background-color: white;
+	box-shadow: 0 3px 5px rgba(0, 0, 0, 0.15);
+	box-sizing: border-box;
+	border-radius: 2px;
+	padding: 0.4rem 0.6rem;
+	overflow: hidden;
+}
+
+.newsItem h3,
+#blog-calendar::before {
+	display: block;
+	color: white;
+	background-color: #009688;
+	width: 100%;
+	padding: 0.4rem 0.6rem;
+	position: relative;
+	right: 0.6rem;
+	bottom: 0.4rem;
+	box-sizing: content-box;
+}
+
+#blog-calendar::before {
+	content: "日历";
+}
+
+#blogCalendar td,
+#calender th {
+	position: relative;
+	color: black;
+	padding: 0.1rem 0.6rem;
+}
+
+.CalTitle td:nth-child(2) {
+	padding: 0 3.1rem !important;
+}
+
+#blogCalendar th.CalDayHeader {
+	color: dimgrey;
+}
+
+#blogCalendar td.CalOtherMonthDay {
+	color: grey;
+}
+
+#blogCalendar td a u {
+	text-decoration: none;
+	color: teal;
+}
+
+#blogCalendar td.CalTodayDay {
+	color: white;
+	z-index: 1;
+}
+
+#blogCalendar td.CalTodayDay::before {
+	top: -0.05rem;
+	right: 0.2rem;
+	position: absolute;
+	display: block;
+	content: "O";
+	color: #009688;
+	background-color: #009688;
+	border-radius: 1rem;
+	width: 1.8rem;
+	height: 1.8rem;
+	z-index: -1;
+}
+
+#leftcontentcontainer> div>div {
+	padding: 0;
+}
+
+.catListTitle {
+	color: white;
+	background-color: #009688;
+	padding: 0.4rem 0.6rem;
+}
+
+#leftcontentcontainer li {
+	padding: 0.2rem 0.4rem;
+	transition: background-color 0.4s;
+}
+
+#leftcontentcontainer li:not(:last-child) {
+	border-bottom: 1px solid rgba(0, 0, 0, 0.15);
+}
+
+#leftcontentcontainer li:hover {
+	background-color: rgba(0, 0, 0, 0.1);
+}
+
+#leftcontentcontainer ul li a {
+	color: black;
+	display: inline-block;
+	width: 100%;
+	white-space: nowrap;
+	overflow: hidden;
+	text-overflow: ellipsis;
+}
+
+#leftcontentcontainer ul li a {
+	color: black;
+	display: inline-block;
+	width: 100%;
+	white-space: nowrap;
+	overflow: hidden;
+	text-overflow: ellipsis;
+}
+
+.recent_comment_title,
+.recent_comment_body {
+	border: none !important;
+	margin: 0 !important;
+}
+
+#sidebar_search_box {
+	padding: 0.4rem 0.6rem;
+}
+
+input.input_my_zzk {
+	border: none;
+	border-bottom: 2px solid teal;
+	width: 11rem;
+}
+
+input.btn_my_zzk {
+	color: white;
+	border: none;
+	outline: none;
+	display: inline-block;
+	background-color: teal;
+	padding: 0.4rem 0.6rem;
+	cursor: pointer;
+	box-shadow: 0 3px 5px rgba(0, 0, 0, 0.2);
+	vertical-align: bottom;
+	height: unset !important;
+	border-radius: 2px;
+}
+
+#sidebar_toptags ul li {
+	padding: 0.3rem 0.4rem;
+}
+
+#sidebar_toptags ul li a {
+	display: inline-block;
+	vertical-align: bottom;
+	width: unset
+}
+
+
+/*****侧边栏结束********************************/
+
+
+/* 文章查看部分 */
+
+#post_detail,
+.feedbackItem,
+#comment_form_container,
+#divCommentShow> div,
+#under_post_news,
+#under_post_kb,
+.entrylistItem,
+#myposts {
+	width: 900px;
+	margin-bottom: 2rem;
+	background-color: white;
+	box-shadow: 0 3px 5px rgba(0, 0, 0, 0.15);
+	padding: 0.6rem 1rem;
+	box-sizing: border-box;
+	border-radius: 2px;
+}
+
+#post_detail .postDesc::after {
+	display: none;
+}
+
+/* 文章后的作者信息，支持/反对 */
+
+#author_profile {
+	width: 150px;
+	float: left;
+	margin-top: 10px;
+}
+
+#green_channel {
+	float: right;
+	position: relative;
+	border: none;
+	right: 150px;
+}
+
+#div_digg {
+	float: right;
+	position: relative;
+	left: 360px;
+}
+
+#digg_tips {
+	display: none;
+}
+
+
+/* 评论区 */
+
+.feedback_area_title,
+#commentform_title,
+.entrylistTitle,
+.myposts_title {
+	font-size: 1.2rem;
+	color: white;
+	background-color: #009688;
+	width: 900px;
+	padding: 0.4rem 0.6rem;
+	box-sizing: border-box;
+	margin-bottom: 1rem;
+}
+
+.feedbackItem {
+	margin-bottom: 1rem;
+	position: relative;
+}
+
+.feedbackListSubtitle {
+	color: white;
+	font-size: 0;
+}
+
+.feedbackManage {
+	float: right !important;
+	z-index: 5;
+	font-size: 1rem;
+}
+
+a.layer {
+	font-style: italic;
+	position: absolute;
+	font-size: 2.5rem;
+	color: black;
+	opacity: 0.1;
+	bottom: 0;
+	right: 1rem;
+}
+
+.comment_date {
+	font-size: 1rem;
+	position: relative;
+	left: 0.5em;
+	color: gray;
+}
+
+.comment_vote {
+	text-align: left;
+	position: relative;
+	right: 0.6rem;
+}
+
+a[id^='a_comment_author'] {
+	font-size: 1rem;
+	float: left;
+}
+
+.louzhu::before,
+.comment_my_posted b::before,
+.new-comment-title a:nth-child(2)::before {
+	color: white;
+	font-size: 1rem;
+	content: "博主";
+	display: inline-block !important;
+	background-color: darkblue;
+	padding: 0 0.2rem;
+	border-radius: 4px;
+	vertical-align: bottom;
+}
+
+.sendMsg2This {
+	display: none;
+}
+
+legend {
+	position: absolute;
+	bottom: 0.3rem;
+	right: 0.3rem;
+}
+
+legend>a::before {
+	content: "查看";
+}
+
+.comment_quote,
+.postBody blockquote {
+	position: relative;
+	border: none;
+	border-left: 10px solid lightgray;
+	background-color: rgba(0, 0, 0, 0.05);
+}
+
+#comment_form {
+	position: relative;
+}
+
+#comment_nav {
+	width: 900px;
+	margin: 2rem 0;
+}
+
+
+/* 发布评论 */
+
+#comment_nav> a,
+#span_refresh_tips,
+#btn_comment_submit,
+#commentbox_opt a {
+	padding: 0.6rem 0.8rem;
+	background-color: #009688;
+	color: white !important;
+	margin: 0.3rem;
+	box-shadow: 0 3px 5px rgba(0, 0, 0, 0.15);
+	border-radius: 2px;
+}
+
+#span_refresh_tips {
+	display:none;
+}
+
+#commentform_title {
+	background-image: none;
+	position: relative;
+	right: 1rem;
+	bottom: 0.6rem;
+	margin-bottom: 0;
+}
+
+#tip_comment {
+	position: absolute;
+	top: 0.1rem;
+}
+
+#tbCommentAuthor {
+	background: none;
+	border: none;
+	padding: 0;
+	font-size: 1rem;
+}
+
+.comment_my_posted> img {
+	display: none;
+}
+
+.comment_my_posted b::before {
+	font-weight: 500;
+	content: "发布中";
+	background-color: skyblue;
+}
+
+.new-comment-title .comment_date {
+	display: none;
+}
+
+.new-comment-title a:nth-child(2) {
+	float: left;
+}
+
+.new-comment-title a:nth-child(2)::before {
+	content: "已发布";
+	background-color: lightgreen;
+}
+
+.new-comment-title a {
+	float: right;
+}
+
+#tbCommentBody {
+	height: 10rem;
+	width: 860px;
+	font-size: 1rem;
+	font-family: "Monaco", "微软雅黑";
+	resize: none;
+}
+
+#btn_comment_submit {
+	border: none;
+	width: unset;
+	height: unset;
+	font-size: 1rem;
+}
+
+#commentbox_opt a:last-child {
+	background-color: gray;
+}
+
+#comment_form_container> p:nth-last-child(2) {
+	color: gray;
+	bottom: 2rem;
+	position: relative;
+	float: right;
+}
+
+
+/* 随笔档案（按时间分类） */
+
+.entrylistPosttitle a {
+	margin-left: 0.3rem;
+}
+
+.entrylistPosttitle a:hover {
+	margin-left: 1.5rem;
+}
+
+
+/* 随笔标签 */
+
+#myposts {
+	margin: 0;
+	padding: 0;
+}
+
+.myposts_title {
+	font-size: 1.2rem !important;
+}
+
+.PostList {
+	font-size: 1rem !important;
+	padding: 1rem;
+	margin: 0 !important;
+	border-bottom: 1px solid gray;
+}
+
+.PostList:nth-last-child(2) {
+	border: none;
+}
+
+.postDesc2 {
+	float: right;
+}
+
+
+/* 页尾footer */
+
+#footer {
+	text-align: center;
+	margin-bottom: 3rem;
+}
+
+
+/*****第三部分结束*******************************/
+
+
+/**************************************************
+第四部分：文章内容常用标签格式。这个部分是设置作者写作内容的部分。例如：
+如果作者的文章用有p标签，则可通过这个对这些文章中的p标签进行设置。前面
+的“.postBody”明确的指出了这里样式的作用范围。仅仅适用于文章主体部分。
+建议这个不要设置过于详细的细节。因为，一些样式，一篇文章比较适合的话，
+并不能保证所有的文章都适合。
+**************************************************/
+
+
+/*文章内部常用标签格式*/
+
+#EntryTag,
+#post_next_prev {
+	font-size: 1rem;
+}
+
+.postBody code,
+.hljs,
+.cnblogs-markdown,
+.sourceCode code pre,
+.sourceCode code span {
+	font-family: "Monaco", "微软雅黑" !important;
+	/*     font-size: 1rem !important; */
+	display: unset;
+}
+
+.sourceCode code {
+	display: inline-block;
+	white-space: pre;
+}
+
+.postBody p img {
+	max-width: 870px !important;
+	margin: 1rem 0 !important;
+}
+
+.postBody blockquote {
+	position: relative;
+	border: none;
+	border-left: 10px solid lightgray;
+	background-color: rgba(0, 0, 0, 0.05);
+}
+
+/*****第四部分结束*******************************/
