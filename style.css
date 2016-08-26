@@ -384,8 +384,11 @@ a.headermaintitle,
 }
 
 #blogCalendar td.CalTodayDay {
-	color: white;
 	z-index: 1;
+}
+
+#blogCalendar td.CalTodayDay a u {
+	color: white !important;
 }
 
 #blogCalendar td.CalTodayDay::before {
@@ -608,6 +611,10 @@ a[id^='a_comment_author'] {
 	vertical-align: bottom;
 }
 
+.louzhu::before {
+	margin-left: 0.5rem;
+}
+
 .sendMsg2This {
 	display: none;
 }
@@ -683,6 +690,7 @@ legend>a::before {
 }
 
 .comment_my_posted b::before {
+	margin-right: 0.5rem;
 	font-weight: 500;
 	content: "发布中";
 	background-color: skyblue;
@@ -697,6 +705,7 @@ legend>a::before {
 }
 
 .new-comment-title a:nth-child(2)::before {
+	margin-right: 0.5rem;
 	content: "已发布";
 	background-color: lightgreen;
 }
