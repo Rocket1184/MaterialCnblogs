@@ -221,6 +221,9 @@ a.headermaintitle,
 	padding: 1em;
 }
 
+.blogStats {
+	display: none;
+}
 
 /*****home和头部结束**************************/
 
