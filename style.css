@@ -293,7 +293,7 @@ a.headermaintitle,
 	color: white;
 	font-size: 8px;
 	display: block;
-	width: 900px;
+	width: calc(100% + 2rem);
 	content: "-";
 	position: relative;
 	right: 1rem;
@@ -828,8 +828,8 @@ legend>a::before {
 }
 
 .postBody p img {
-	max-width: 870px !important;
-	margin: 1rem 0 !important;
+	max-width: 100% !important;
+	margin: 1rem 0;
 }
 
 .postBody blockquote {
@@ -840,3 +840,102 @@ legend>a::before {
 }
 
 /*****第四部分结束*******************************/
+
+/**************************************************
+第五部分：响应式视图布局。
+**************************************************/
+
+@media screen and (max-width:1200px) {
+    body {
+      width: 100%;
+      overflow-x: hidden;
+	}
+    
+    #blogTitle h1,
+    #blogTitle h2 {
+      margin-left: 2rem;
+    }
+    
+    #main {
+      width: 100%;
+      padding: 0 1rem;
+    }
+    
+    #mainContent,
+    #sideBar {
+      width: calc(100% - 2rem);
+    }
+    
+    .day {
+      width: 100%;
+    }
+    
+    .dayTitle,
+    #comment_form_container> p:nth-last-child(2),
+    .postText2 {
+      display: none;
+    }
+    
+    .feedback_area_title,
+    .entrylistTitle,
+    .myposts_title,
+    .feedbackItem,
+    #post_detail,
+    #comment_form_container,
+    #divCommentShow> div,
+    #under_post_news,
+    #under_post_kb,
+    .entrylistItem,
+    #myposts {
+      width: 100%;
+    } 
+
+    #green_channel {
+      float: none;
+      right: 0;
+    }
+    
+    #blogCalendar td.CalTodayDay {
+      background-color: teal;
+    }
+
+    #blogCalendar td.CalTodayDay::before {
+      display: none;
+    }
+    
+    #commentform_title {
+      width: calc(100% + 2rem);
+    }
+
+    #tbCommentBody {
+      width: calc(100% - 0.5rem);
+    }
+    
+    .commentbox_title_right {
+      float: none;
+    }
+    
+    .postBody img {
+      max-width: 100% !important;
+    }
+    
+    .PostList {
+      padding: 0.5rem 0.5rem 0;
+    }
+    
+    .postDesc2 {
+      display: block;
+      margin-top: 1rem;
+    }
+  }
+
+@media screen and (max-width:1200px) and (min-width:900px) {
+	#main,
+    #sideBar,
+    #blogTitle h1,
+    #blogTitle h2 {
+      width: 900px;
+    }
+}
+
+/*****第五部分结束*******************************/
