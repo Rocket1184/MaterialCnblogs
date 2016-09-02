@@ -390,6 +390,7 @@ a.headermaintitle,
 	z-index: 1;
 }
 
+#blogCalendar td.CalTodayDay,
 #blogCalendar td.CalTodayDay a u {
 	color: white !important;
 }
