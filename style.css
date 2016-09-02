@@ -10,6 +10,7 @@
 作者：杨正祎
 **************************************************/
 
+
 /**************************************************
 说明2：
 上面那个说明，是在 http://skintemplate.cnblogs.com 下载的皮肤模板中附带的
@@ -22,6 +23,7 @@
 作者：Rocket1184@博客园
 **************************************************/
 
+
 /**************************************************
 坑：
 由于博客园任性的代码高亮CSS，全部是 !important 优先级而且无法覆盖，
@@ -31,6 +33,7 @@
 作者：Rocket1184@博客园
 **************************************************/
 
+
 /**************************************************
 第一部分：所有的模板都使用的公共样式。公告样式是为了更好的向前和向后兼容。
 如果不符合你皮肤的要求，你可以在后面通过更高的优先级覆盖着这些样式，但是
@@ -38,22 +41,22 @@
 **************************************************/
 
 #EntryTag {
-	margin-top: 20px;
-	font-size: 9pt;
-	color: gray;
+    margin-top: 20px;
+    font-size: 9pt;
+    color: gray;
 }
 
 .topicListFooter {
-	text-align: right;
-	margin-right: 10px;
-	margin-top: 10px;
+    text-align: right;
+    margin-right: 10px;
+    margin-top: 10px;
 }
 
 #divRefreshComments {
-	text-align: right;
-	margin-right: 10px;
-	margin-bottom: 5px;
-	font-size: 9pt;
+    text-align: right;
+    margin-right: 10px;
+    margin-bottom: 5px;
+    font-size: 9pt;
 }
 
 
@@ -67,37 +70,37 @@
 **************************************************/
 
 * {
-	margin: 0;
-	padding: 0;
+    margin: 0;
+    padding: 0;
 }
 
 html {
-	height: 100%;
+    height: 100%;
 }
 
 body {
-	color: #000000;
-	background: #CFD8DD;
-	font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-	font-size: 16px;
+    color: #000000;
+    background: #CFD8DD;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 16px;
 }
 
 table {
-	border-collapse: collapse;
-	border-spacing: 0;
+    border-collapse: collapse;
+    border-spacing: 0;
 }
 
 fieldset,
 img {
-	border: 0;
+    border: 0;
 }
 
 ul {
-	word-break: break-all;
+    word-break: break-all;
 }
 
 li {
-	list-style: none;
+    list-style: none;
 }
 
 h1,
@@ -106,36 +109,36 @@ h3,
 h4,
 h5,
 h6 {
-	font-size: 100%;
-	font-weight: normal;
+    font-size: 100%;
+    font-weight: normal;
 }
 
 a {
-	outline: none;
+    outline: none;
 }
 
 a:link {
-	color: black;
-	text-decoration: none;
+    color: black;
+    text-decoration: none;
 }
 
 a:visited {
-	color: black;
-	text-decoration: none;
+    color: black;
+    text-decoration: none;
 }
 
 a:hover {
-	color: #F60;
-	text-decoration: none;
+    color: #F60;
+    text-decoration: none;
 }
 
 a:active {
-	color: black;
-	text-decoration: none;
+    color: black;
+    text-decoration: none;
 }
 
 .clear {
-	clear: both;
+    clear: both;
 }
 
 
@@ -152,78 +155,79 @@ a:active {
 /*****home和头部开始**************************/
 
 #header {
-	margin-bottom: 1.2rem;
+    margin-bottom: 1.2rem;
 }
 
 #blogTitle {
-	height: 240px;
-	margin-top: 3em;
-	background-color: teal;
+    height: 240px;
+    margin-top: 3em;
+    background-color: teal;
 }
 
 #blogTitle h1,
 #blogTitle h2 {
-	width: 1200px;
-	display: block;
-	margin: 0 auto;
+    width: 1200px;
+    display: block;
+    margin: 0 auto;
 }
 
 #blogTitle h1 {
-	margin-top: 4em;
+    margin-top: 4em;
 }
 
 a.headermaintitle,
 #blogTitle h2 {
-	text-decoration: none;
-	font-size: 2.4rem;
-	color: white;
-	font-weight: 900;
-	text-shadow: 0 4px 4px rgba(0, 0, 0, 0.2);
+    text-decoration: none;
+    font-size: 2.4rem;
+    color: white;
+    font-weight: 900;
+    text-shadow: 0 4px 4px rgba(0, 0, 0, 0.2);
 }
 
 #blogTitle h2 {
-	font-weight: 500;
-	font-size: 1.2rem;
+    font-weight: 500;
+    font-size: 1.2rem;
 }
 
 #navigator {
-	background-color: #009688;
-	position: fixed;
-	width: 100%;
-	height: 3em;
-	top: 0;
-	right: 0;
-	overflow: hidden;
-	box-shadow: 0 0 8px rgba(0, 0, 0, 0.5);
-	opacity: 0.8;
-	z-index: 10086;
+    background-color: #009688;
+    position: fixed;
+    width: 100%;
+    height: 3em;
+    top: 0;
+    right: 0;
+    overflow: hidden;
+    box-shadow: 0 0 8px rgba(0, 0, 0, 0.5);
+    opacity: 0.8;
+    z-index: 10086;
 }
 
 #navList {
-	display: block;
-	width: 1200px;
-	margin: auto;
+    display: block;
+    width: 1200px;
+    margin: auto;
 }
 
 #navList li {
-	display: inline-block;
-	padding: 0.8em 0;
-	transition: background-color 0.4s;
+    display: inline-block;
+    padding: 0.8em 0;
+    transition: background-color 0.4s;
 }
 
 #navList li:hover {
-	background-color: rgba(255, 255, 255, 0.2);
+    background-color: rgba(255, 255, 255, 0.2);
 }
 
 #navList li a {
-	text-decoration: none;
-	color: white;
-	padding: 1em;
+    text-decoration: none;
+    color: white;
+    padding: 1em;
 }
 
 .blogStats {
-	display: none;
+    display: none;
 }
+
 
 /*****home和头部结束**************************/
 
@@ -231,95 +235,95 @@ a.headermaintitle,
 /*****主页文章列表开始**************************/
 
 #main {
-	width: 1200px;
-	margin: auto;
-	font-size: 0;
+    width: 1200px;
+    margin: auto;
+    font-size: 0;
 }
 
 #mainContent,
 #sideBar {
-	font-size: 1rem;
-	width: 920px;
-	display: inline-block;
+    font-size: 1rem;
+    width: 920px;
+    display: inline-block;
 }
 
 .day {
-	width: 900px;
-	margin-bottom: 2rem;
-	background-color: white;
-	box-shadow: 0 3px 5px rgba(0, 0, 0, 0.15);
-	padding: 0.6rem 1rem;
-	box-sizing: border-box;
-	border-radius: 2px;
+    width: 900px;
+    margin-bottom: 2rem;
+    background-color: white;
+    box-shadow: 0 3px 5px rgba(0, 0, 0, 0.15);
+    padding: 0.6rem 1rem;
+    box-sizing: border-box;
+    border-radius: 2px;
 }
 
 .dayTitle {
-	color: #009688;
-	float: right;
+    color: #009688;
+    float: right;
 }
 
 .postTitle::before,
 .entrylistPosttitle::before {
-	content: "|";
-	color: #009688;
-	font-size: 1.3rem;
-	font-weight: 900;
-	display: inline-block;
+    content: "|";
+    color: #009688;
+    font-size: 1.3rem;
+    font-weight: 900;
+    display: inline-block;
 }
 
 .postTitle a,
 .entrylistPosttitle a {
-	text-decoration: none;
-	font-size: 1.3rem;
-	color: #009688;
-	transition: margin-left 0.4s;
+    text-decoration: none;
+    font-size: 1.3rem;
+    color: #009688;
+    transition: margin-left 0.4s;
 }
 
 .postTitle a:hover {
-	margin-left: 1.2rem;
+    margin-left: 1.2rem;
 }
 
 .postCon,
 .entrylistPostSummary {
-	margin: 1em;
+    margin: 1em;
 }
 
 .postTitle:not(:nth-child(2)) {
-	padding-top: 0.6rem;
+    padding-top: 0.6rem;
 }
 
 .postDesc:not(:nth-last-child(2))::after {
-	user-select: none;
-	color: white;
-	font-size: 8px;
-	display: block;
-	width: calc(100% + 2rem);
-	content: "-";
-	position: relative;
-	right: 1rem;
-	box-shadow: 0 3px 5px rgba(0, 0, 0, 0.15);
-	border-radius: 2px;
-	z-index: 2;
+    user-select: none;
+    color: white;
+    font-size: 8px;
+    display: block;
+    width: calc(100% + 2rem);
+    content: "-";
+    position: relative;
+    right: 1rem;
+    box-shadow: 0 3px 5px rgba(0, 0, 0, 0.15);
+    border-radius: 2px;
+    z-index: 2;
 }
 
 .postSeparator {
-	width: 920px;
-	position: relative;
-	right: 1.5rem;
-	height: 2rem;
-	display: block;
-	background-color: #CFD8DD;
+    width: 920px;
+    position: relative;
+    right: 1.5rem;
+    height: 2rem;
+    display: block;
+    background-color: #CFD8DD;
 }
 
 .topicListFooter {
-	width: 900px;
+    width: 900px;
 }
 
 .topicListFooter a {
-	padding: 0.6rem 1rem;
-	color: white;
-	background-color: #009688;
-	box-shadow: 0 3px 5px rgba(0, 0, 0, 0.15);
+    padding: 0.6rem 1rem;
+    color: white;
+    background-color: #009688;
+    box-shadow: 0 3px 5px rgba(0, 0, 0, 0.15);
 }
 
 
@@ -329,165 +333,165 @@ a.headermaintitle,
 /*****侧边栏开始********************************/
 
 #sideBar {
-	width: 280px;
-	vertical-align: top;
+    width: 280px;
+    vertical-align: top;
 }
 
 .newsItem,
 #blog-calendar,
 #leftcontentcontainer> div>div {
-	margin-bottom: 2rem;
-	background-color: white;
-	box-shadow: 0 3px 5px rgba(0, 0, 0, 0.15);
-	box-sizing: border-box;
-	border-radius: 2px;
-	padding: 0.4rem 0.6rem;
-	overflow: hidden;
+    margin-bottom: 2rem;
+    background-color: white;
+    box-shadow: 0 3px 5px rgba(0, 0, 0, 0.15);
+    box-sizing: border-box;
+    border-radius: 2px;
+    padding: 0.4rem 0.6rem;
+    overflow: hidden;
 }
 
 .newsItem h3,
 #blog-calendar::before {
-	display: block;
-	color: white;
-	background-color: #009688;
-	width: 100%;
-	padding: 0.4rem 0.6rem;
-	position: relative;
-	right: 0.6rem;
-	bottom: 0.4rem;
-	box-sizing: content-box;
+    display: block;
+    color: white;
+    background-color: #009688;
+    width: 100%;
+    padding: 0.4rem 0.6rem;
+    position: relative;
+    right: 0.6rem;
+    bottom: 0.4rem;
+    box-sizing: content-box;
 }
 
 #blog-calendar::before {
-	content: "日历";
+    content: "日历";
 }
 
 #blogCalendar td,
 #calender th {
-	position: relative;
-	color: black;
-	padding: 0.1rem 0.6rem;
+    position: relative;
+    color: black;
+    padding: 0.1rem 0.6rem;
 }
 
 .CalTitle td:nth-child(2) {
-	padding: 0 3.1rem !important;
+    padding: 0 3.1rem !important;
 }
 
 #blogCalendar th.CalDayHeader {
-	color: dimgrey;
+    color: dimgrey;
 }
 
 #blogCalendar td.CalOtherMonthDay {
-	color: grey;
+    color: grey;
 }
 
 #blogCalendar td a u {
-	text-decoration: none;
-	color: teal;
+    text-decoration: none;
+    color: teal;
 }
 
 #blogCalendar td.CalTodayDay {
-	z-index: 1;
+    z-index: 1;
 }
 
 #blogCalendar td.CalTodayDay,
 #blogCalendar td.CalTodayDay a u {
-	color: white !important;
+    color: white !important;
 }
 
 #blogCalendar td.CalTodayDay::before {
-	top: -0.05rem;
-	right: 0.2rem;
-	position: absolute;
-	display: block;
-	content: "O";
-	color: #009688;
-	background-color: #009688;
-	border-radius: 1rem;
-	width: 1.8rem;
-	height: 1.8rem;
-	z-index: -1;
+    top: -0.05rem;
+    right: 0.2rem;
+    position: absolute;
+    display: block;
+    content: "O";
+    color: #009688;
+    background-color: #009688;
+    border-radius: 1rem;
+    width: 1.8rem;
+    height: 1.8rem;
+    z-index: -1;
 }
 
 #leftcontentcontainer> div>div {
-	padding: 0;
+    padding: 0;
 }
 
 .catListTitle {
-	color: white;
-	background-color: #009688;
-	padding: 0.4rem 0.6rem;
+    color: white;
+    background-color: #009688;
+    padding: 0.4rem 0.6rem;
 }
 
 #leftcontentcontainer li {
-	padding: 0.2rem 0.4rem;
-	transition: background-color 0.4s;
+    padding: 0.2rem 0.4rem;
+    transition: background-color 0.4s;
 }
 
 #leftcontentcontainer li:not(:last-child) {
-	border-bottom: 1px solid rgba(0, 0, 0, 0.15);
+    border-bottom: 1px solid rgba(0, 0, 0, 0.15);
 }
 
 #leftcontentcontainer li:hover {
-	background-color: rgba(0, 0, 0, 0.1);
+    background-color: rgba(0, 0, 0, 0.1);
 }
 
 #leftcontentcontainer ul li a {
-	color: black;
-	display: inline-block;
-	width: 100%;
-	white-space: nowrap;
-	overflow: hidden;
-	text-overflow: ellipsis;
+    color: black;
+    display: inline-block;
+    width: 100%;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
 }
 
 #leftcontentcontainer ul li a {
-	color: black;
-	display: inline-block;
-	width: 100%;
-	white-space: nowrap;
-	overflow: hidden;
-	text-overflow: ellipsis;
+    color: black;
+    display: inline-block;
+    width: 100%;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
 }
 
 .recent_comment_title,
 .recent_comment_body {
-	border: none !important;
-	margin: 0 !important;
+    border: none !important;
+    margin: 0 !important;
 }
 
 #sidebar_search_box {
-	padding: 0.4rem 0.6rem;
+    padding: 0.4rem 0.6rem;
 }
 
 input.input_my_zzk {
-	border: none;
-	border-bottom: 2px solid teal;
-	width: 11rem;
+    border: none;
+    border-bottom: 2px solid teal;
+    width: 11rem;
 }
 
 input.btn_my_zzk {
-	color: white;
-	border: none;
-	outline: none;
-	display: inline-block;
-	background-color: teal;
-	padding: 0.4rem 0.6rem;
-	cursor: pointer;
-	box-shadow: 0 3px 5px rgba(0, 0, 0, 0.2);
-	vertical-align: bottom;
-	height: unset !important;
-	border-radius: 2px;
+    color: white;
+    border: none;
+    outline: none;
+    display: inline-block;
+    background-color: teal;
+    padding: 0.4rem 0.6rem;
+    cursor: pointer;
+    box-shadow: 0 3px 5px rgba(0, 0, 0, 0.2);
+    vertical-align: bottom;
+    height: unset !important;
+    border-radius: 2px;
 }
 
 #sidebar_toptags ul li {
-	padding: 0.3rem 0.4rem;
+    padding: 0.3rem 0.4rem;
 }
 
 #sidebar_toptags ul li a {
-	display: inline-block;
-	vertical-align: bottom;
-	width: unset
+    display: inline-block;
+    vertical-align: bottom;
+    width: unset
 }
 
 
@@ -504,42 +508,43 @@ input.btn_my_zzk {
 #under_post_kb,
 .entrylistItem,
 #myposts {
-	width: 900px;
-	margin-bottom: 2rem;
-	background-color: white;
-	box-shadow: 0 3px 5px rgba(0, 0, 0, 0.15);
-	padding: 0.6rem 1rem;
-	box-sizing: border-box;
-	border-radius: 2px;
+    width: 900px;
+    margin-bottom: 2rem;
+    background-color: white;
+    box-shadow: 0 3px 5px rgba(0, 0, 0, 0.15);
+    padding: 0.6rem 1rem;
+    box-sizing: border-box;
+    border-radius: 2px;
 }
 
 #post_detail .postDesc::after {
-	display: none;
+    display: none;
 }
+
 
 /* 文章后的作者信息，支持/反对 */
 
 #author_profile {
-	width: 150px;
-	float: left;
-	margin-top: 10px;
+    width: 150px;
+    float: left;
+    margin-top: 10px;
 }
 
 #green_channel {
-	float: right;
-	position: relative;
-	border: none;
-	right: 150px;
+    float: right;
+    position: relative;
+    border: none;
+    right: 150px;
 }
 
 #div_digg {
-	float: right;
-	position: relative;
-	left: 360px;
+    float: right;
+    position: relative;
+    left: 360px;
 }
 
 #digg_tips {
-	display: none;
+    display: none;
 }
 
 
@@ -549,110 +554,110 @@ input.btn_my_zzk {
 #commentform_title,
 .entrylistTitle,
 .myposts_title {
-	font-size: 1.2rem;
-	color: white;
-	background-color: #009688;
-	width: 900px;
-	padding: 0.4rem 0.6rem;
-	box-sizing: border-box;
-	margin-bottom: 1rem;
+    font-size: 1.2rem;
+    color: white;
+    background-color: #009688;
+    width: 900px;
+    padding: 0.4rem 0.6rem;
+    box-sizing: border-box;
+    margin-bottom: 1rem;
 }
 
 .feedbackItem {
-	margin-bottom: 1rem;
-	position: relative;
+    margin-bottom: 1rem;
+    position: relative;
 }
 
 .feedbackListSubtitle {
-	color: white;
-	font-size: 0;
+    color: white;
+    font-size: 0;
 }
 
 .feedbackManage {
-	float: right !important;
-	z-index: 5;
-	font-size: 1rem;
+    float: right !important;
+    z-index: 5;
+    font-size: 1rem;
 }
 
 a.layer {
-	font-style: italic;
-	position: absolute;
-	font-size: 3.5rem;
-	color: black;
-	opacity: 0.1;
-	bottom: 0;
-	right: 1rem;
-	z-index: 1;
+    font-style: italic;
+    position: absolute;
+    font-size: 3.5rem;
+    color: black;
+    opacity: 0.1;
+    bottom: 0;
+    right: 1rem;
+    z-index: 1;
 }
 
 .comment_date {
-	font-size: 1rem;
-	position: relative;
-	left: 0.5em;
-	color: gray;
+    font-size: 1rem;
+    position: relative;
+    left: 0.5em;
+    color: gray;
 }
 
 .blog_comment_body {
-	margin: 8px;
+    margin: 8px;
 }
 
 .comment_vote {
-	text-align: left;
-	position: relative;
-	right: 0.6rem;
+    text-align: left;
+    position: relative;
+    right: 0.6rem;
 }
 
 a[id^='a_comment_author'] {
-	font-size: 1rem;
-	float: left;
+    font-size: 1rem;
+    float: left;
 }
 
 .louzhu::before,
 .comment_my_posted b::before,
 .new-comment-title a:nth-child(2)::before {
-	color: white;
-	font-size: 1rem;
-	content: "博主";
-	display: inline-block !important;
-	background-color: darkblue;
-	padding: 0 0.2rem;
-	border-radius: 4px;
-	vertical-align: bottom;
+    color: white;
+    font-size: 1rem;
+    content: "博主";
+    display: inline-block !important;
+    background-color: darkblue;
+    padding: 0 0.2rem;
+    border-radius: 4px;
+    vertical-align: bottom;
 }
 
 .louzhu::before {
-	margin-left: 0.5rem;
+    margin-left: 0.5rem;
 }
 
 .sendMsg2This {
-	display: none;
+    display: none;
 }
 
 legend {
-	position: absolute;
-	bottom: 0.3rem;
-	right: 0.3rem;
+    position: absolute;
+    bottom: 0.3rem;
+    right: 0.3rem;
 }
 
 legend>a::before {
-	content: "查看";
+    content: "查看";
 }
 
 .comment_quote,
 .postBody blockquote {
-	position: relative;
-	border: none;
-	border-left: 10px solid lightgray;
-	background-color: rgba(0, 0, 0, 0.05);
+    position: relative;
+    border: none;
+    border-left: 10px solid lightgray;
+    background-color: rgba(0, 0, 0, 0.05);
 }
 
 #comment_form {
-	position: relative;
+    position: relative;
 }
 
 #comment_nav {
-	width: 900px;
-	margin: 2rem 0;
+    width: 900px;
+    margin: 2rem 0;
 }
 
 
@@ -662,137 +667,137 @@ legend>a::before {
 #span_refresh_tips,
 #btn_comment_submit,
 #commentbox_opt a {
-	padding: 0.6rem 0.8rem;
-	background-color: #009688;
-	color: white !important;
-	margin: 0.3rem;
-	box-shadow: 0 3px 5px rgba(0, 0, 0, 0.15);
-	border-radius: 2px;
+    padding: 0.6rem 0.8rem;
+    background-color: #009688;
+    color: white !important;
+    margin: 0.3rem;
+    box-shadow: 0 3px 5px rgba(0, 0, 0, 0.15);
+    border-radius: 2px;
 }
 
 #span_refresh_tips {
-	display:none;
+    display: none;
 }
 
 #commentform_title {
-	background-image: none;
-	position: relative;
-	right: 1rem;
-	bottom: 0.6rem;
-	margin-bottom: 0;
+    background-image: none;
+    position: relative;
+    right: 1rem;
+    bottom: 0.6rem;
+    margin-bottom: 0;
 }
 
 #tip_comment {
-	position: absolute;
-	top: 0.1rem;
+    position: absolute;
+    top: 0.1rem;
 }
 
 #tbCommentAuthor {
-	background: none;
-	border: none;
-	padding: 0;
-	font-size: 1rem;
+    background: none;
+    border: none;
+    padding: 0;
+    font-size: 1rem;
 }
 
 .comment_my_posted> img {
-	display: none;
+    display: none;
 }
 
 .comment_my_posted b::before {
-	margin-right: 0.5rem;
-	font-weight: 500;
-	content: "发布中";
-	background-color: skyblue;
+    margin-right: 0.5rem;
+    font-weight: 500;
+    content: "发布中";
+    background-color: skyblue;
 }
 
 .new-comment-title .comment_date {
-	display: none;
+    display: none;
 }
 
 .new-comment-title a:nth-child(2) {
-	float: left;
+    float: left;
 }
 
 .new-comment-title a:nth-child(2)::before {
-	margin-right: 0.5rem;
-	content: "已发布";
-	background-color: lightgreen;
+    margin-right: 0.5rem;
+    content: "已发布";
+    background-color: lightgreen;
 }
 
 .new-comment-title a {
-	float: right;
+    float: right;
 }
 
 #tbCommentBody {
-	height: 10rem;
-	width: 860px;
-	font-size: 1rem;
-	font-family: "Monaco", "微软雅黑";
-	resize: none;
+    height: 10rem;
+    width: 860px;
+    font-size: 1rem;
+    font-family: "Monaco", "微软雅黑";
+    resize: none;
 }
 
 #btn_comment_submit {
-	border: none;
-	width: unset;
-	height: unset;
-	font-size: 1rem;
+    border: none;
+    width: unset;
+    height: unset;
+    font-size: 1rem;
 }
 
 #commentbox_opt a:last-child {
-	background-color: gray;
+    background-color: gray;
 }
 
 #comment_form_container> p:nth-last-child(2) {
-	color: gray;
-	bottom: 2rem;
-	position: relative;
-	float: right;
+    color: gray;
+    bottom: 2rem;
+    position: relative;
+    float: right;
 }
 
 
 /* 随笔档案（按时间分类） */
 
 .entrylistPosttitle a {
-	margin-left: 0.3rem;
+    margin-left: 0.3rem;
 }
 
 .entrylistPosttitle a:hover {
-	margin-left: 1.5rem;
+    margin-left: 1.5rem;
 }
 
 
 /* 随笔标签 */
 
 #myposts {
-	margin: 0;
-	padding: 0;
+    margin: 0;
+    padding: 0;
 }
 
 .myposts_title {
-	font-size: 1.2rem !important;
+    font-size: 1.2rem !important;
 }
 
 .PostList {
-	font-size: 1rem !important;
-	padding: 1rem;
-	margin: 0 !important;
-	border-bottom: 1px solid gray;
+    font-size: 1rem !important;
+    padding: 1rem;
+    margin: 0 !important;
+    border-bottom: 1px solid gray;
 }
 
 .PostList:nth-last-child(2) {
-	border: none;
+    border: none;
 }
 
 .postDesc2 {
-	float: right;
+    float: right;
 }
 
 
 /* 页尾footer */
 
 #footer {
-	text-align: center;
-	margin-bottom: 3rem;
+    text-align: center;
+    margin-bottom: 3rem;
 }
 
 
@@ -812,7 +817,7 @@ legend>a::before {
 
 #EntryTag,
 #post_next_prev {
-	font-size: 1rem;
+    font-size: 1rem;
 }
 
 .postBody code,
@@ -820,27 +825,29 @@ legend>a::before {
 .cnblogs-markdown,
 .sourceCode code pre,
 .sourceCode code span {
-	font-family: "Monaco", "微软雅黑" !important;
+    font-family: "Monaco", "微软雅黑" !important;
 }
 
 .sourceCode code {
-	display: inline-block;
-	white-space: pre;
+    display: inline-block;
+    white-space: pre;
 }
 
 .postBody p img {
-	max-width: 100% !important;
-	margin: 1rem 0;
+    max-width: 100% !important;
+    margin: 1rem 0;
 }
 
 .postBody blockquote {
-	position: relative;
-	border: none;
-	border-left: 10px solid lightgray;
-	background-color: rgba(0, 0, 0, 0.05);
+    position: relative;
+    border: none;
+    border-left: 10px solid lightgray;
+    background-color: rgba(0, 0, 0, 0.05);
 }
 
+
 /*****第四部分结束*******************************/
+
 
 /**************************************************
 第五部分：响应式视图布局。
@@ -848,35 +855,29 @@ legend>a::before {
 
 @media screen and (max-width:1200px) {
     body {
-      width: 100%;
-      overflow-x: hidden;
-	}
-    
+        width: 100%;
+        overflow-x: hidden;
+    }
     #blogTitle h1,
     #blogTitle h2 {
-      margin-left: 2rem;
+        margin-left: 2rem;
     }
-    
     #main {
-      width: 100%;
-      padding: 0 1rem;
+        width: 100%;
+        padding: 0 1rem;
     }
-    
     #mainContent,
     #sideBar {
-      width: calc(100% - 2rem);
+        width: calc(100% - 2rem);
     }
-    
     .day {
-      width: 100%;
+        width: 100%;
     }
-    
     .dayTitle,
     #comment_form_container> p:nth-last-child(2),
     .postText2 {
-      display: none;
+        display: none;
     }
-    
     .feedback_area_title,
     .entrylistTitle,
     .myposts_title,
@@ -888,56 +889,48 @@ legend>a::before {
     #under_post_kb,
     .entrylistItem,
     #myposts {
-      width: 100%;
-    } 
-
+        width: 100%;
+    }
     #green_channel {
-      float: none;
-      right: 0;
+        float: none;
+        right: 0;
     }
-    
     #blogCalendar td.CalTodayDay {
-      background-color: teal;
+        background-color: teal;
     }
-
     #blogCalendar td.CalTodayDay::before {
-      display: none;
+        display: none;
     }
-    
     #commentform_title {
-      width: calc(100% + 2rem);
+        width: calc(100% + 2rem);
     }
-
     #tbCommentBody {
-      width: calc(100% - 0.5rem);
+        width: calc(100% - 0.5rem);
     }
-    
     .commentbox_title_right {
-      float: none;
+        float: none;
     }
-    
     .postBody img {
-      max-width: 100% !important;
+        max-width: 100% !important;
     }
-    
     .PostList {
-      padding: 0.5rem 0.5rem 0;
+        padding: 0.5rem 0.5rem 0;
     }
-    
     .postDesc2 {
-      display: block;
-      margin-top: 1rem;
+        display: block;
+        margin-top: 1rem;
     }
-  }
+}
 
 @media screen and (max-width:1200px) and (min-width:900px) {
-	#main,
-	#mainContent,
+    #main,
+    #mainContent,
     #sideBar,
     #blogTitle h1,
     #blogTitle h2 {
-      width: 900px;
+        width: 900px;
     }
 }
+
 
 /*****第五部分结束*******************************/
