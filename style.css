@@ -508,7 +508,8 @@ input.btn_my_zzk {
 #under_post_news,
 #under_post_kb,
 .entrylistItem,
-#myposts {
+#myposts,
+#ad_t2 {
     width: 900px;
     margin-bottom: 2rem;
     background-color: white;
@@ -575,9 +576,11 @@ input.btn_my_zzk {
 }
 
 .feedbackManage {
-    float: right !important;
     z-index: 5;
     font-size: 1rem;
+    position: absolute;
+    bottom: 0.6rem;
+    right: 1rem;
 }
 
 a.layer {
@@ -632,12 +635,6 @@ a[id^='a_comment_author'] {
 
 .sendMsg2This {
     display: none;
-}
-
-legend {
-    position: absolute;
-    bottom: 0.3rem;
-    right: 0.3rem;
 }
 
 legend>a::before {
@@ -698,6 +695,7 @@ legend>a::before {
     border: none;
     padding: 0;
     font-size: 1rem;
+    width: calc(100% - 3rem);
 }
 
 .comment_my_posted> img {
@@ -801,6 +799,13 @@ legend>a::before {
     margin-bottom: 3rem;
 }
 
+/* 比较影响页面一致性的广告 */
+
+#ad_c1,
+#ad_c2 {
+    display: none
+}
+
 
 /*****第三部分结束*******************************/
 
@@ -834,7 +839,7 @@ legend>a::before {
     white-space: pre;
 }
 
-.postBody p img {
+.postBody img {
     max-width: 100% !important;
     margin: 1rem 0;
 }
@@ -863,10 +868,6 @@ legend>a::before {
         margin: 0;
         width: max-content;
     }
-    body {
-        width: 100%;
-        overflow-x: hidden;
-    }
     #blogTitle h1,
     #blogTitle h2 {
         margin-left: 2rem;
@@ -877,18 +878,14 @@ legend>a::before {
         padding: 0 1rem;
         box-sizing: border-box;
     }
-    #mainContent,
-    #sideBar {
-        width: 100%;
-    }
-    .day {
-        width: 100%;
-    }
     .dayTitle,
     #comment_form_container> p:nth-last-child(2),
     .postText2 {
         display: none;
     }
+    #mainContent,
+    #sideBar,
+    .day,
     .feedback_area_title,
     .entrylistTitle,
     .myposts_title,
@@ -899,12 +896,18 @@ legend>a::before {
     #under_post_news,
     #under_post_kb,
     .entrylistItem,
-    #myposts {
+    #myposts,
+    #comment_nav,
+    #ad_t2 {
         width: 100%;
     }
     #green_channel {
+        width: max-content;
         float: none;
         right: 0;
+    }
+    #div_digg {
+        position: inherit;
     }
     #blogCalendar td.CalTodayDay {
         background-color: teal;
@@ -918,11 +921,11 @@ legend>a::before {
     #tbCommentBody {
         width: calc(100% - 0.5rem);
     }
+    .commentbox_title {
+        width: 300px;
+    }
     .commentbox_title_right {
         float: none;
-    }
-    .postBody img {
-        max-width: 100% !important;
     }
     .PostList {
         padding: 0.5rem 0.5rem 0;
