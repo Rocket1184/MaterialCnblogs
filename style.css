@@ -340,7 +340,7 @@ a.headermaintitle,
 
 .newsItem,
 #blog-calendar,
-#leftcontentcontainer> div>div {
+#leftcontentcontainer > div > div {
     margin-bottom: 2rem;
     background-color: white;
     box-shadow: 0 3px 5px rgba(0, 0, 0, 0.15);
@@ -414,7 +414,7 @@ a.headermaintitle,
     z-index: -1;
 }
 
-#leftcontentcontainer> div>div {
+#leftcontentcontainer > div > div {
     padding: 0;
 }
 
@@ -504,7 +504,7 @@ input.btn_my_zzk {
 #post_detail,
 .feedbackItem,
 #comment_form_container,
-#divCommentShow> div,
+#divCommentShow > div,
 #under_post_news,
 #under_post_kb,
 .entrylistItem,
@@ -637,7 +637,7 @@ a[id^='a_comment_author'] {
     display: none;
 }
 
-legend>a::before {
+legend > a::before {
     content: '查看';
 }
 
@@ -661,7 +661,7 @@ legend>a::before {
 
 /* 发布评论 */
 
-#comment_nav> a,
+#comment_nav > a,
 #span_refresh_tips,
 #btn_comment_submit,
 #commentbox_opt a {
@@ -698,7 +698,7 @@ legend>a::before {
     width: calc(100% - 3rem);
 }
 
-.comment_my_posted> img {
+.comment_my_posted > img {
     display: none;
 }
 
@@ -731,7 +731,7 @@ legend>a::before {
     height: 10rem;
     width: 860px;
     font-size: 1rem;
-    font-family: 'Monaco', '文泉驿微米黑','微软雅黑';
+    font-family: 'Monaco', '文泉驿微米黑', '微软雅黑';
     resize: none;
 }
 
@@ -746,7 +746,7 @@ legend>a::before {
     background-color: gray;
 }
 
-#comment_form_container> p:nth-last-child(2) {
+#comment_form_container > p:nth-last-child(2) {
     color: gray;
     bottom: 2rem;
     position: relative;
@@ -799,6 +799,7 @@ legend>a::before {
     margin-bottom: 3rem;
 }
 
+
 /* 比较影响页面一致性的广告 */
 
 #ad_c1,
@@ -826,9 +827,10 @@ legend>a::before {
     font-size: 1rem;
 }
 
-#cnblogs_post_body > code{
-    font-family: 'Monaco', '文泉驿微米黑','微软雅黑', monospace !important;
+#cnblogs_post_body > code {
+    font-family: 'Monaco', '文泉驿微米黑', '微软雅黑', monospace !important;
 }
+
 
 /*.sourceCode code {
     display: inline-block;
@@ -874,7 +876,7 @@ legend>a::before {
         box-sizing: border-box;
     }
     .dayTitle,
-    #comment_form_container> p:nth-last-child(2),
+    #comment_form_container > p:nth-last-child(2),
     .postText2 {
         display: none;
     }
@@ -887,7 +889,7 @@ legend>a::before {
     .feedbackItem,
     #post_detail,
     #comment_form_container,
-    #divCommentShow> div,
+    #divCommentShow > div,
     #under_post_news,
     #under_post_kb,
     .entrylistItem,
