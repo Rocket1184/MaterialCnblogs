@@ -29,7 +29,12 @@
 由于博客园任性的代码高亮CSS，全部是 !important 优先级而且无法覆盖，
 此次的修改没有对代码块的字体大小做调整，但这恰恰是我最急于改变的地方之一。
 我会尽快申请JS权限，以便找到更好的解决方案。
-时间：2016-8-26 00：16
+时间：2016-8-26 00:16
+
+更新：
+已经使用优先级更高的 id 选择器和 !important 优先级覆盖了默认代码字体。
+这坑算是填上了。
+时间：2012-11-8 00:14
 作者：Rocket1184@博客园
 **************************************************/
 
@@ -827,15 +832,10 @@ legend > a::before {
     font-size: 1rem;
 }
 
-#cnblogs_post_body > code {
+#cnblogs_post_body code {
     font-family: 'Monaco', '文泉驿微米黑', '微软雅黑', monospace !important;
-}
-
-
-/*.sourceCode code {
-    display: inline-block;
     white-space: pre;
-}*/
+}
 
 .postBody img {
     max-width: 100% !important;
