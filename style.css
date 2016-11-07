@@ -81,7 +81,7 @@ html {
 body {
     color: #000000;
     background: #CFD8DD;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-family: '文泉驿微米黑', 'Noto Sans CJK SC', 'Segoe UI', sans-serif;
     font-size: 16px;
 }
 
@@ -265,7 +265,7 @@ a.headermaintitle,
 
 .postTitle::before,
 .entrylistPosttitle::before {
-    content: "|";
+    content: '|';
     color: #009688;
     font-size: 1.3rem;
     font-weight: 900;
@@ -299,7 +299,7 @@ a.headermaintitle,
     font-size: 8px;
     display: block;
     width: calc(100% + 2rem);
-    content: "-";
+    content: '-';
     position: relative;
     right: 1rem;
     box-shadow: 0 3px 5px rgba(0, 0, 0, 0.15);
@@ -364,7 +364,7 @@ a.headermaintitle,
 }
 
 #blog-calendar::before {
-    content: "日历";
+    content: '日历';
 }
 
 #blogCalendar td,
@@ -405,7 +405,7 @@ a.headermaintitle,
     right: 0.2rem;
     position: absolute;
     display: block;
-    content: "O";
+    content: 'O';
     color: #009688;
     background-color: #009688;
     border-radius: 1rem;
@@ -621,7 +621,7 @@ a[id^='a_comment_author'] {
 .new-comment-title a:nth-child(2)::before {
     color: white;
     font-size: 1rem;
-    content: "博主";
+    content: '博主';
     display: inline-block !important;
     background-color: darkblue;
     padding: 0 0.2rem;
@@ -638,7 +638,7 @@ a[id^='a_comment_author'] {
 }
 
 legend>a::before {
-    content: "查看";
+    content: '查看';
 }
 
 .comment_quote,
@@ -705,7 +705,7 @@ legend>a::before {
 .comment_my_posted b::before {
     margin-right: 0.5rem;
     font-weight: 500;
-    content: "发布中";
+    content: '发布中';
     background-color: skyblue;
 }
 
@@ -719,7 +719,7 @@ legend>a::before {
 
 .new-comment-title a:nth-child(2)::before {
     margin-right: 0.5rem;
-    content: "已发布";
+    content: '已发布';
     background-color: lightgreen;
 }
 
@@ -731,7 +731,7 @@ legend>a::before {
     height: 10rem;
     width: 860px;
     font-size: 1rem;
-    font-family: "Monaco", "微软雅黑";
+    font-family: 'Monaco', '文泉驿微米黑','微软雅黑';
     resize: none;
 }
 
@@ -826,18 +826,14 @@ legend>a::before {
     font-size: 1rem;
 }
 
-.postBody code,
-.hljs,
-.cnblogs-markdown,
-.sourceCode code pre,
-.sourceCode code span {
-    font-family: "Monaco", "微软雅黑" !important;
+#cnblogs_post_body > code{
+    font-family: 'Monaco', '文泉驿微米黑','微软雅黑', monospace !important;
 }
 
-.sourceCode code {
+/*.sourceCode code {
     display: inline-block;
     white-space: pre;
-}
+}*/
 
 .postBody img {
     max-width: 100% !important;
@@ -898,7 +894,7 @@ legend>a::before {
     #myposts,
     #comment_nav,
     #ad_t2 {
-        width: 100%;
+        width: 100% !important;
     }
     #green_channel {
         width: max-content;
