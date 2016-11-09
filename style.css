@@ -833,7 +833,7 @@ legend > a::before {
 }
 
 #cnblogs_post_body code {
-    font-family: 'Monaco', '文泉驿微米黑', '微软雅黑', monospace !important;
+    font-family: 'Monaco', 'Consolas', monospace, '文泉驿微米黑', '微软雅黑' !important;
     white-space: pre;
 }
 
